@@ -70,6 +70,14 @@ $accordion-bg: #f4f7fb;
     }
 
     .navbar-collapse {
+      @include desktop() {
+        margin: 20px 0;
+      }
+
+      @include tablet() {
+        margin: 20px 0;
+      }
+
       @include mobile() {
         margin: 20px 0;
       }
@@ -93,6 +101,36 @@ $accordion-bg: #f4f7fb;
         .nav-item {
           .nav-link {
             font-size: 14px;
+            margin-bottom: -13px;
+            color: $font-light;
+
+            &::after {
+              content: "";
+              display: block;
+              margin-top: 5px;
+              width: 0;
+              height: 3px;
+              background: $primary-color;
+              transition: width 0.3s;
+
+              @include desktop() {
+                height: 0;
+              }
+
+              @include tablet() {
+                height: 0;
+              }
+
+              @include mobile() {
+                height: 0;
+              }
+            }
+
+            &:hover {
+              &::after {
+                width: 100%;
+              }
+            }
 
             @include mobile() {
               font-size: 16px;
@@ -105,6 +143,19 @@ $accordion-bg: #f4f7fb;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include desktop() {
+          margin-top: 20px;
+        }
+
+        @include tablet() {
+          margin-top: 20px;
+        }
+
+        @include mobile() {
+          margin-top: 20px;
+        }
+
         .btn-primary {
           background: $primary-color;
           padding: 10px 20px;
