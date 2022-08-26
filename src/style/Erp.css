@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.headerWrapper {
+  height: 100vh;
+  background: #172b5e;
+}
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.navbar .container .navbar-brand {
+  font-size: 24px;
+}
+@media screen and (max-width: 576px) {
+  .navbar .container .navbar-brand {
+    font-size: 30px;
+  }
+}
+.navbar .container .navbar-toggler {
+  border: none;
+}
+.navbar .container .navbar-toggler svg {
+  color: #fff;
+  font-size: 30px;
+}
+@media screen and (max-width: 576px) {
+  .navbar .container .navbar-collapse {
+    margin: 20px 0;
+  }
+}
+.navbar .container .navbar-collapse .navbar-nav {
+  gap: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    gap: 10px;
+  }
+}
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+  .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}
+.navbar .container .navbar-collapse .btn-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container .navbar-collapse .btn-navbar .btn-primary {
+  background: #3366ff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .container .navbar-collapse .btn-navbar .btn-primary:hover {
+  background-color: transparent;
+  border-color: #3366ff;
+}/*# sourceMappingURL=erp.css.map */

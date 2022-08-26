@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+$primary-color: #3366ff;
+$hero-color: #172b5e;
+$font-light: #fff;
+$font-dark: #000000;
+$para-color: #464646;
+$layanan-keamanan: #94ccfd;
+$layanan-cloud: #7aec8d;
+$layanan-fleksibel: #fec7a9;
+$icon-star: #e89900;
+$accordion-bg: #f4f7fb;
+
+// Breakpoints
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin desktop2 {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+// Navbar
+.headerWrapper {
+  height: 100vh;
+  background: $hero-color;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+
+  .container {
+    .navbar-brand {
+      font-size: 24px;
+
+      @include mobile() {
+        font-size: 30px;
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+
+      svg {
+        color: $font-light;
+        font-size: 30px;
+      }
+    }
+
+    .navbar-collapse {
+      @include mobile() {
+        margin: 20px 0;
+      }
+
+      .navbar-nav {
+        gap: 40px;
+        text-align: center;
+
+        @include desktop() {
+          gap: 10px;
+        }
+
+        @include tablet() {
+          gap: 10px;
+        }
+
+        @include mobile() {
+          gap: 10px;
+        }
+
+        .nav-item {
+          .nav-link {
+            font-size: 14px;
+
+            @include mobile() {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .btn-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-primary {
+          background: $primary-color;
+          padding: 10px 20px;
+          border-radius: 2px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: transparent;
+            border-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
