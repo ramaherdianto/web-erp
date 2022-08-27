@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import ButtonPrimary from "./ButtonPrimary";
 
 const NavigationBar = () => {
   return (
@@ -20,7 +21,7 @@ const NavigationBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#aboutus">
                   Tentang Kami
                 </a>
               </li>
@@ -41,9 +42,7 @@ const NavigationBar = () => {
               </li>
             </ul>
             <div className="btn-navbar">
-              <button className="btn btn-primary" type="submit">
-                Hubungi Kami
-              </button>
+              <ButtonPrimary textButton="Hubungi Kami" />
             </div>
           </div>
         </div>

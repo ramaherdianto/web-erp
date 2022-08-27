@@ -1,7 +1,9 @@
 import React from "react";
+import ButtonPrimary from "./ButtonPrimary";
 import { Row, Col } from "react-bootstrap";
 import dotsImage from "../assets/dots-hero.png";
 import heroImage from "../assets/hero.png";
+import ButtonSecondary from "./ButtonSecondary";
 
 const Hero = () => {
   return (
@@ -19,12 +21,8 @@ const Hero = () => {
               <p>ERP software dari Mekari dirancang untuk meningkatkan efisiensi operasional perusahaan melalui solusi otomasi bisnis yang aman dan terintegrasi.</p>
             </div>
             <div className="btn-hero">
-              <button className="btn btn-primary" type="submit">
-                Hubungi Kami
-              </button>
-              <button className="btn btn-outline-primary ms-4" type="submit">
-                Pelajari
-              </button>
+              <ButtonPrimary textButton="Hubungi Kami" />
+              <ButtonSecondary textButton="Pelajari" />
             </div>
           </Col>
           <Col lg={6} className="colHero-2">
