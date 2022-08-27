@@ -21,7 +21,7 @@ const NavigationBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#aboutus">
+                <a className="nav-link" href="#aboutUs">
                   Tentang Kami
                 </a>
               </li>
@@ -42,7 +42,7 @@ const NavigationBar = () => {
               </li>
             </ul>
             <div className="btn-navbar">
-              <ButtonPrimary textButton="Hubungi Kami" />
+              <ButtonPrimary>Hubungi Kami</ButtonPrimary>
             </div>
           </div>
         </div>

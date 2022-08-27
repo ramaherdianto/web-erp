@@ -41,24 +41,25 @@ $accordion-bg: #f4f7fb;
   }
 }
 
-@mixin buttonPrimary {
+@mixin buttonPrimary($hoverColor) {
   background: $primary-color;
   padding: 10px 20px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 
   &:hover {
+    color: $hoverColor;
     background-color: transparent;
     border-color: $primary-color;
   }
 }
-@mixin buttonOutlinePrimary {
+@mixin buttonOutlinePrimary($color) {
   background: transparent;
   padding: 10px 20px;
   border: none;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
-  color: $font-light;
+  color: $color;
 
   &:hover {
     color: $primary-color;
@@ -221,7 +222,7 @@ $accordion-bg: #f4f7fb;
         }
 
         .btn-primary {
-          @include buttonPrimary();
+          @include buttonPrimary($font-light);
         }
       }
     }
@@ -298,11 +299,11 @@ $accordion-bg: #f4f7fb;
         margin-top: 50px;
 
         .btn-primary {
-          @include buttonPrimary();
+          @include buttonPrimary($font-light);
         }
 
         .btn-outline-primary {
-          @include buttonOutlinePrimary();
+          @include buttonOutlinePrimary($font-light);
         }
       }
     }
@@ -321,6 +322,92 @@ $accordion-bg: #f4f7fb;
 
         @include mobile() {
           width: 80vw;
+        }
+      }
+    }
+  }
+}
+
+// AboutUs Section
+.aboutUsWrapper {
+  padding: 76px 0;
+
+  h5 {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  .innerAboutUs {
+    margin-top: 100px;
+    display: flex;
+    row-gap: 50px;
+
+    @include desktop() {
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    @include tablet() {
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    @include mobile() {
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .aboutImage {
+      img {
+        width: 500px;
+        position: relative;
+
+        @include mobile() {
+          width: 95vw;
+        }
+      }
+    }
+
+    .aboutUsTypo {
+      p {
+        color: $para-color;
+        font-size: 18px;
+      }
+
+      .para-desktop {
+        @include mobile() {
+          display: none;
+        }
+      }
+
+      .para-mobile {
+        display: none;
+
+        .btnReadmore {
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: 600;
+          margin-left: 5px;
+        }
+
+        @include mobile() {
+          display: block;
+          text-align: justify;
+        }
+      }
+
+      .btnAbout {
+        .btn-primary {
+          @include buttonPrimary($primary-color);
+        }
+
+        .btn-outline-primary {
+          font-weight: 600;
+          @include buttonOutlinePrimary($font-dark);
         }
       }
     }

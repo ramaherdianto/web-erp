@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import "./style/Erp.css";
 import "./App.css";
 import AboutUs from "./components/AboutUs";
-import Container from "react-bootstrap/esm/Container";
 
 function App() {
   return (
@@ -13,9 +12,7 @@ function App() {
         <Hero />
       </div>
 
-      <Container>
-        <AboutUs />
-      </Container>
+      <AboutUs />
     </>
   );
 }

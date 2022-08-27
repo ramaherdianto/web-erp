@@ -21,8 +21,8 @@ const Hero = () => {
               <p>ERP software dari Mekari dirancang untuk meningkatkan efisiensi operasional perusahaan melalui solusi otomasi bisnis yang aman dan terintegrasi.</p>
             </div>
             <div className="btn-hero">
-              <ButtonPrimary textButton="Hubungi Kami" />
-              <ButtonSecondary textButton="Pelajari" />
+              <ButtonPrimary>Hubungi Kami</ButtonPrimary>
+              <ButtonSecondary>Pelajari</ButtonSecondary>
             </div>
           </Col>
           <Col lg={6} className="colHero-2">

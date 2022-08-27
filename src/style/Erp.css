@@ -172,6 +172,7 @@
   transition: all 0.3s ease-in-out;
 }
 .navbar .container .navbar-collapse .btn-navbar .btn-primary:hover {
+  color: #fff;
   background-color: transparent;
   border-color: #3366ff;
 }
@@ -252,6 +253,7 @@
   transition: all 0.3s ease-in-out;
 }
 .heroSection .innerHero .colHero-1 .btn-hero .btn-primary:hover {
+  color: #fff;
   background-color: transparent;
   border-color: #3366ff;
 }
@@ -283,4 +285,94 @@
   .heroSection .innerHero .colHero-2 img {
     width: 80vw;
   }
+}
+
+.aboutUsWrapper {
+  padding: 76px 0;
+}
+.aboutUsWrapper h5 {
+  color: #3366ff;
+  font-weight: 600;
+}
+.aboutUsWrapper h1 {
+  font-weight: 600;
+}
+.aboutUsWrapper .innerAboutUs {
+  margin-top: 100px;
+  display: flex;
+  row-gap: 50px;
+}
+@media screen and (max-width: 992px) {
+  .aboutUsWrapper .innerAboutUs {
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .aboutUsWrapper .innerAboutUs {
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutUsWrapper .innerAboutUs {
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+.aboutUsWrapper .innerAboutUs .aboutImage img {
+  width: 500px;
+  position: relative;
+}
+@media screen and (max-width: 576px) {
+  .aboutUsWrapper .innerAboutUs .aboutImage img {
+    width: 95vw;
+  }
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo p {
+  color: #464646;
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .aboutUsWrapper .innerAboutUs .aboutUsTypo .para-desktop {
+    display: none;
+  }
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile {
+  display: none;
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile .btnReadmore {
+  text-decoration: none;
+  color: #3366ff;
+  font-weight: 600;
+  margin-left: 5px;
+}
+@media screen and (max-width: 576px) {
+  .aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile {
+    display: block;
+    text-align: justify;
+  }
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-primary {
+  background: #3366ff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-primary:hover {
+  color: #3366ff;
+  background-color: transparent;
+  border-color: #3366ff;
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary {
+  font-weight: 600;
+  background: transparent;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
+.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary:hover {
+  color: #3366ff;
 }/*# sourceMappingURL=erp.css.map */
