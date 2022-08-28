@@ -41,31 +41,6 @@ $accordion-bg: #f4f7fb;
   }
 }
 
-@mixin buttonPrimary($hoverColor) {
-  background: $primary-color;
-  padding: 10px 20px;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: $hoverColor;
-    background-color: transparent;
-    border-color: $primary-color;
-  }
-}
-@mixin buttonOutlinePrimary($color) {
-  background: transparent;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-  color: $color;
-
-  &:hover {
-    color: $primary-color;
-  }
-}
-
 // Navbar
 .headerWrapper {
   height: 100vh;
@@ -220,10 +195,6 @@ $accordion-bg: #f4f7fb;
         @include mobile() {
           margin-top: 20px;
         }
-
-        .btn-primary {
-          @include buttonPrimary($font-light);
-        }
       }
     }
   }
@@ -297,14 +268,6 @@ $accordion-bg: #f4f7fb;
       }
       .btn-hero {
         margin-top: 50px;
-
-        .btn-primary {
-          @include buttonPrimary($font-light);
-        }
-
-        .btn-outline-primary {
-          @include buttonOutlinePrimary($font-light);
-        }
       }
     }
 
@@ -402,12 +365,18 @@ $accordion-bg: #f4f7fb;
 
       .btnAbout {
         .btn-primary {
-          @include buttonPrimary($primary-color);
+          &:hover {
+            color: $primary-color;
+          }
         }
 
         .btn-outline-primary {
           font-weight: 600;
-          @include buttonOutlinePrimary($font-dark);
+          color: $font-dark;
+
+          &:hover {
+            color: $primary-color;
+          }
         }
       }
     }
