@@ -41,7 +41,7 @@ const AboutUs = () => {
               </a>
             </p>
 
-            <div className="btnAbout">
+            <div className="btnAbout d-flex justify-content-sm-center justify-content-md-center justify-content-lg-start">
               <ButtonPrimary>Tentang Kami</ButtonPrimary>
               <ButtonSecondary>Cerita Kami</ButtonSecondary>
             </div>
