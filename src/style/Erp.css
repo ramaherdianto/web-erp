@@ -165,17 +165,6 @@
     margin-top: 20px;
   }
 }
-.navbar .container .navbar-collapse .btn-navbar .btn-primary {
-  background: #3366ff;
-  padding: 10px 20px;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
-.navbar .container .navbar-collapse .btn-navbar .btn-primary:hover {
-  color: #fff;
-  background-color: transparent;
-  border-color: #3366ff;
-}
 
 .heroSection {
   margin-top: 100px;
@@ -245,28 +234,6 @@
 }
 .heroSection .innerHero .colHero-1 .btn-hero {
   margin-top: 50px;
-}
-.heroSection .innerHero .colHero-1 .btn-hero .btn-primary {
-  background: #3366ff;
-  padding: 10px 20px;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
-.heroSection .innerHero .colHero-1 .btn-hero .btn-primary:hover {
-  color: #fff;
-  background-color: transparent;
-  border-color: #3366ff;
-}
-.heroSection .innerHero .colHero-1 .btn-hero .btn-outline-primary {
-  background: transparent;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-  color: #fff;
-}
-.heroSection .innerHero .colHero-1 .btn-hero .btn-outline-primary:hover {
-  color: #3366ff;
 }
 .heroSection .innerHero .colHero-2 {
   display: flex;
@@ -353,24 +320,11 @@
     text-align: justify;
   }
 }
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-primary {
-  background: #3366ff;
-  padding: 10px 20px;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
 .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-primary:hover {
   color: #3366ff;
-  background-color: transparent;
-  border-color: #3366ff;
 }
 .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary {
   font-weight: 600;
-  background: transparent;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
   color: #000000;
 }
 .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary:hover {

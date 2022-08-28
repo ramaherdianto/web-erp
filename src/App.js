@@ -1,7 +1,6 @@
 import NavigationBar from "./components/NavigationBar";
 import Hero from "./components/Hero";
 import "./style/Erp.css";
-import "./App.css";
 import AboutUs from "./components/AboutUs";
 
 function App() {
