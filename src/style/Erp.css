@@ -375,4 +375,165 @@
 }
 .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary:hover {
   color: #3366ff;
+}
+
+#layanan {
+  padding: 79px 0;
+}
+#layanan h5 {
+  color: #3366ff;
+  font-weight: 600;
+}
+#layanan h1 {
+  font-weight: 600;
+  line-height: 60px;
+  padding: 0 100px;
+}
+@media screen and (max-width: 992px) {
+  #layanan h1 {
+    padding: 0;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan h1 {
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper {
+    padding: 0 20px;
+  }
+}
+#layanan .innerSwiper .swiper {
+  padding: 40px 0;
+  margin-top: 40px;
+}
+#layanan .innerSwiper .swiper .swiper-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    justify-content: flex-start;
+  }
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(1) .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #3366ff;
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(2) .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #94ccfd;
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(3) .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #7aec8d;
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(4) .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fec7a9;
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
+  width: 275px;
+  height: 275px;
+  box-shadow: 0px 40px 16px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 5px 5px;
+}
+@media screen and (max-width: 992px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
+    width: 350px;
+    height: 380px;
+  }
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
+  width: 60px;
+  margin-top: 35px;
+}
+@media screen and (max-width: 992px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
+    width: 85px;
+    margin-top: 40px;
+  }
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+}
+#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-text {
+  color: #000000;
+  font-weight: 400;
+}
+@media screen and (max-width: 576px) {
+  #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-text {
+    font-size: 22px;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=erp.css.map */

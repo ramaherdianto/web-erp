@@ -413,3 +413,173 @@ $accordion-bg: #f4f7fb;
     }
   }
 }
+
+// Layanan Section
+#layanan {
+  padding: 79px 0;
+  h5 {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0 100px;
+
+    @include desktop() {
+      padding: 0;
+      line-height: 50px;
+    }
+
+    @include mobile() {
+      line-height: 40px;
+    }
+  }
+
+  .innerSwiper {
+    @include mobile() {
+      padding: 0 20px;
+    }
+    .swiper {
+      padding: 40px 0;
+      margin-top: 40px;
+      .swiper-wrapper {
+        display: flex;
+
+        @include desktop() {
+          column-gap: 30px;
+        }
+
+        @include tablet() {
+          column-gap: 30px;
+        }
+
+        @include mobile() {
+          column-gap: 25px;
+          justify-content: flex-start;
+        }
+        .layananItem {
+          &:nth-child(1) {
+            .card {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $primary-color;
+              }
+            }
+          }
+          &:nth-child(2) {
+            .card {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $layanan-keamanan;
+              }
+            }
+          }
+          &:nth-child(3) {
+            .card {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $layanan-cloud;
+              }
+            }
+          }
+          &:nth-child(4) {
+            .card {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $layanan-fleksibel;
+              }
+            }
+          }
+
+          .card {
+            // padding: 24px 16px;
+            width: 275px;
+            height: 275px;
+
+            box-shadow: 0px 40px 16px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 0px 5px 5px;
+
+            @include desktop() {
+              width: 250px;
+            }
+
+            @include tablet() {
+              width: 250px;
+            }
+
+            @include mobile() {
+              width: 350px;
+              height: 380px;
+            }
+
+            .card-img-top {
+              width: 60px;
+              margin-top: 35px;
+
+              @include desktop() {
+                margin-top: 35px;
+              }
+
+              @include tablet() {
+                margin-top: 35px;
+              }
+
+              @include mobile() {
+                width: 85px;
+                margin-top: 40px;
+              }
+            }
+
+            .card-title {
+              font-size: 18px;
+              color: $font-dark;
+              font-weight: 600;
+              margin-top: 20px;
+
+              @include desktop() {
+                margin-top: 20px;
+              }
+
+              @include tablet() {
+                margin-top: 20px;
+              }
+
+              @include mobile() {
+                font-size: 28px;
+                margin-top: 30px;
+              }
+            }
+
+            .card-text {
+              color: $font-dark;
+              font-weight: 400;
+
+              @include mobile() {
+                font-size: 22px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
