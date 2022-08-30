@@ -1,19 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const ButtonSec = styled.a`
-  background: transparent;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-  color: #fff;
-
-  &:hover {
-    color: #3366ff;
-    background: transparent;
-  }
-`;
+import { ButtonSec } from "./styles/Button.styled";
 
 const ButtonSecondary = (props) => {
   return (

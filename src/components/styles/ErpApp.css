@@ -26,11 +26,6 @@
   }
 }
 
-.navbar {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-}
 .navbar .container .navbar-brand {
   font-size: 24px;
   font-weight: 700;
@@ -81,20 +76,6 @@
     gap: 10px;
   }
 }
-.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-size: 14px;
-  margin-bottom: -13px;
-  color: #fff;
-}
-.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
-  content: "";
-  display: block;
-  margin-top: 5px;
-  width: 100%;
-  height: 3px;
-  background: #3366ff;
-  transition: width 0.3s;
-}
 @media screen and (max-width: 992px) {
   .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
     height: 0;
@@ -112,15 +93,6 @@
     height: 0;
     width: 0;
   }
-}
-.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link::after {
-  content: "";
-  display: block;
-  margin-top: 5px;
-  width: 0;
-  height: 3px;
-  background: #3366ff;
-  transition: width 0.3s;
 }
 @media screen and (max-width: 992px) {
   .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link::after {
@@ -145,11 +117,6 @@
     font-size: 16px;
   }
 }
-.navbar .container .navbar-collapse .btn-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (max-width: 992px) {
   .navbar .container .navbar-collapse .btn-navbar {
     margin-top: 20px;
@@ -166,213 +133,124 @@
   }
 }
 
-.heroSection {
-  margin-top: 100px;
-  padding-bottom: 100px;
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (max-width: 576px) {
-  .heroSection {
+  #hero {
     margin-top: 70px;
   }
 }
-.heroSection .innerHero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
 @media screen and (max-width: 992px) {
-  .heroSection .innerHero {
+  #hero .innerHero {
     gap: 100px;
     flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 576px) {
-  .heroSection .innerHero {
+  #hero .innerHero {
     gap: 70px;
   }
 }
-.heroSection .innerHero .colHero-1 .dotsImage {
-  position: absolute;
-  height: 150px;
-  left: -40px;
-  top: -65px;
-}
 @media screen and (max-width: 992px) {
-  .heroSection .innerHero .colHero-1 .dotsImage {
+  #hero .innerHero .colHero-1 .dotsImage {
     display: none;
   }
 }
-.heroSection .innerHero .colHero-1 .heroTypography {
+#hero .innerHero .colHero-1 .heroTypography {
   position: relative;
 }
-.heroSection .innerHero .colHero-1 .heroTypography h1 {
-  color: #fff;
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 60px;
-}
-.heroSection .innerHero .colHero-1 .heroTypography h1 span {
-  color: #3366ff;
-}
 @media screen and (max-width: 576px) {
-  .heroSection .innerHero .colHero-1 .heroTypography h1 {
+  #hero .innerHero .colHero-1 .heroTypography h1 {
     font-size: 9vw;
     line-height: 12vw;
   }
 }
-.heroSection .innerHero .colHero-1 .heroTypography p {
-  color: #fff;
-  font-size: normal;
-  font-weight: 300;
-  margin-top: 20px;
-}
-.heroSection .innerHero .colHero-1 .btn-hero {
+#hero .innerHero .colHero-1 .btn-hero {
   margin-top: 50px;
 }
-.heroSection .innerHero .colHero-2 {
-  display: flex;
-  justify-content: end;
-}
 @media screen and (max-width: 992px) {
-  .heroSection .innerHero .colHero-2 {
+  #hero .innerHero .colHero-2 {
     justify-content: center;
   }
 }
-.heroSection .innerHero .colHero-2 img {
-  width: 400px;
-  margin-right: 0;
-}
 @media screen and (max-width: 576px) {
-  .heroSection .innerHero .colHero-2 img {
+  #hero .innerHero .colHero-2 img {
     width: 80vw;
   }
 }
 
-.aboutUsWrapper {
-  padding: 76px 0;
-}
-.aboutUsWrapper h5 {
-  color: #3366ff;
-  font-weight: 600;
-}
-.aboutUsWrapper h1 {
-  font-weight: 600;
-}
-.aboutUsWrapper .innerAboutUs {
-  margin-top: 100px;
-  display: flex;
-  row-gap: 50px;
-}
 @media screen and (max-width: 992px) {
-  .aboutUsWrapper .innerAboutUs {
+  #aboutUs .innerAboutUs {
     margin-top: 40px;
     gap: 40px;
   }
 }
 @media screen and (max-width: 769px) {
-  .aboutUsWrapper .innerAboutUs {
+  #aboutUs .innerAboutUs {
     margin-top: 40px;
     gap: 40px;
   }
 }
 @media screen and (max-width: 576px) {
-  .aboutUsWrapper .innerAboutUs {
+  #aboutUs .innerAboutUs {
     margin-top: 20px;
     gap: 20px;
   }
 }
-.aboutUsWrapper .innerAboutUs .aboutImage img {
-  width: 500px;
-  position: relative;
-}
 @media screen and (max-width: 576px) {
-  .aboutUsWrapper .innerAboutUs .aboutImage img {
-    width: 95vw;
+  #aboutUs .innerAboutUs .aboutImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-.aboutUsWrapper .innerAboutUs .aboutUsTypo p {
-  color: #464646;
-  font-size: 18px;
+@media screen and (max-width: 576px) {
+  #aboutUs .innerAboutUs .aboutImage img {
+    width: 85vw;
+  }
 }
 @media screen and (max-width: 992px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .para-desktop {
+  #aboutUs .innerAboutUs .aboutUsTypo .para-desktop {
     text-align: justify;
   }
 }
 @media screen and (max-width: 576px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .para-desktop {
+  #aboutUs .innerAboutUs .aboutUsTypo .para-desktop {
     display: none;
   }
 }
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile {
-  display: none;
-}
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile .btnReadmore {
-  text-decoration: none;
-  color: #3366ff;
-  font-weight: 600;
-  margin-left: 5px;
-}
 @media screen and (max-width: 576px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .para-mobile {
+  #aboutUs .innerAboutUs .aboutUsTypo .para-mobile {
     display: block;
     text-align: justify;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 992px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout {
+  #aboutUs .innerAboutUs .aboutUsTypo .btnAbout {
     margin-top: 50px;
   }
 }
 @media screen and (max-width: 769px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout {
+  #aboutUs .innerAboutUs .aboutUsTypo .btnAbout {
     margin-top: 50px;
   }
 }
 @media screen and (max-width: 576px) {
-  .aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout {
+  #aboutUs .innerAboutUs .aboutUsTypo .btnAbout {
     margin-top: 50px;
     display: flex;
     justify-content: center;
   }
 }
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-primary:hover {
-  color: #3366ff;
-}
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary {
-  font-weight: 600;
-  color: #000000;
-}
-.aboutUsWrapper .innerAboutUs .aboutUsTypo .btnAbout .btn-outline-primary:hover {
-  color: #3366ff;
-}
 
-#layanan {
-  padding: 79px 0;
-  position: relative;
-}
-#layanan .hiasanLayananYellow {
-  width: 100px;
-  position: absolute;
-  top: 260px;
-  left: -50px;
+@media screen and (max-width: 576px) {
+  #layanan {
+    padding: 30px 0;
+  }
 }
 @media screen and (max-width: 992px) {
   #layanan .hiasanLayananYellow {
     display: none;
   }
-}
-#layanan .hiasanLayananBlue {
-  width: 100px;
-  position: absolute;
-  bottom: 60px;
-  right: -20px;
 }
 @media screen and (max-width: 1200px) {
   #layanan .hiasanLayananBlue {
@@ -383,15 +261,6 @@
   #layanan .hiasanLayananBlue {
     display: none;
   }
-}
-#layanan h5 {
-  color: #3366ff;
-  font-weight: 600;
-}
-#layanan h1 {
-  font-weight: 600;
-  line-height: 60px;
-  padding: 0 100px;
 }
 @media screen and (max-width: 992px) {
   #layanan h1 {
@@ -409,14 +278,6 @@
     padding: 0 20px;
   }
 }
-#layanan .innerSwiper .swiper {
-  padding: 40px 0;
-  margin-top: 40px;
-  position: relative;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper {
-  display: flex;
-}
 @media screen and (max-width: 992px) {
   #layanan .innerSwiper .swiper .swiper-wrapper {
     -moz-column-gap: 30px;
@@ -431,52 +292,11 @@
 }
 @media screen and (max-width: 576px) {
   #layanan .innerSwiper .swiper .swiper-wrapper {
-    -moz-column-gap: 25px;
-         column-gap: 25px;
+    -moz-column-gap: 9vw;
+         column-gap: 9vw;
     justify-content: flex-start;
   }
 }
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem {
-  position: relative;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(1) .card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #3366ff;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(2) .card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #94ccfd;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(3) .card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #7aec8d;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem:nth-child(4) .card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #fec7a9;
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
-  width: 275px;
-  height: 275px;
-  box-shadow: 0px 40px 16px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 5px 5px;
-}
 @media screen and (max-width: 992px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
     width: 250px;
@@ -489,13 +309,9 @@
 }
 @media screen and (max-width: 576px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card {
-    width: 350px;
+    width: 300px;
     height: 380px;
   }
-}
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
-  width: 60px;
-  margin-top: 35px;
 }
 @media screen and (max-width: 992px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-img-top {
@@ -513,12 +329,6 @@
     margin-top: 40px;
   }
 }
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
-  font-size: 18px;
-  color: #000000;
-  font-weight: 600;
-  margin-top: 20px;
-}
 @media screen and (max-width: 992px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
     margin-top: 20px;
@@ -531,17 +341,13 @@
 }
 @media screen and (max-width: 576px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-title {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 30px;
   }
 }
-#layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-text {
-  color: #000000;
-  font-weight: 400;
-}
 @media screen and (max-width: 576px) {
   #layanan .innerSwiper .swiper .swiper-wrapper .layananItem .card .card-text {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
   }
-}/*# sourceMappingURL=erp.css.map */
+}/*# sourceMappingURL=ErpApp.css.map */

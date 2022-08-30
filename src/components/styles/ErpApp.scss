@@ -59,10 +59,6 @@ $accordion-bg: #f4f7fb;
   }
 }
 .navbar {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-
   .container {
     .navbar-brand {
       font-size: 24px;
@@ -113,20 +109,8 @@ $accordion-bg: #f4f7fb;
 
         .nav-item {
           .nav-link {
-            font-size: 14px;
-            margin-bottom: -13px;
-            color: $font-light;
-
             &.active {
               &::after {
-                content: "";
-                display: block;
-                margin-top: 5px;
-                width: 100%;
-                height: 3px;
-                background: $primary-color;
-                transition: width 0.3s;
-
                 @include desktop() {
                   height: 0;
                   width: 0;
@@ -145,14 +129,6 @@ $accordion-bg: #f4f7fb;
             }
 
             &::after {
-              content: "";
-              display: block;
-              margin-top: 5px;
-              width: 0;
-              height: 3px;
-              background: $primary-color;
-              transition: width 0.3s;
-
               @include desktop() {
                 height: 0;
               }
@@ -180,10 +156,6 @@ $accordion-bg: #f4f7fb;
       }
 
       .btn-navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         @include desktop() {
           margin-top: 20px;
         }
@@ -201,25 +173,12 @@ $accordion-bg: #f4f7fb;
 }
 
 // Hero Section
-.heroSection {
-  margin-top: 100px;
-  padding-bottom: 100px;
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+#hero {
   @include mobile() {
     margin-top: 70px;
   }
 
   .innerHero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-
     @include desktop() {
       gap: 100px;
       flex-direction: column-reverse;
@@ -231,11 +190,6 @@ $accordion-bg: #f4f7fb;
 
     .colHero-1 {
       .dotsImage {
-        position: absolute;
-        height: 150px;
-        left: -40px;
-        top: -65px;
-
         @include desktop() {
           display: none;
         }
@@ -244,26 +198,10 @@ $accordion-bg: #f4f7fb;
       .heroTypography {
         position: relative;
         h1 {
-          color: $font-light;
-          font-size: 46px;
-          font-weight: 700;
-          line-height: 60px;
-
-          span {
-            color: $primary-color;
-          }
-
           @include mobile() {
             font-size: 9vw;
             line-height: 12vw;
           }
-        }
-
-        p {
-          color: $font-light;
-          font-size: normal;
-          font-weight: 300;
-          margin-top: 20px;
         }
       }
       .btn-hero {
@@ -272,17 +210,11 @@ $accordion-bg: #f4f7fb;
     }
 
     .colHero-2 {
-      display: flex;
-      justify-content: end;
-
       @include desktop() {
         justify-content: center;
       }
 
       img {
-        width: 400px;
-        margin-right: 0;
-
         @include mobile() {
           width: 80vw;
         }
@@ -292,23 +224,8 @@ $accordion-bg: #f4f7fb;
 }
 
 // AboutUs Section
-.aboutUsWrapper {
-  padding: 76px 0;
-
-  h5 {
-    color: $primary-color;
-    font-weight: 600;
-  }
-
-  h1 {
-    font-weight: 600;
-  }
-
+#aboutUs {
   .innerAboutUs {
-    margin-top: 100px;
-    display: flex;
-    row-gap: 50px;
-
     @include desktop() {
       margin-top: 40px;
       gap: 40px;
@@ -325,22 +242,19 @@ $accordion-bg: #f4f7fb;
     }
 
     .aboutImage {
+      @include mobile() {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       img {
-        width: 500px;
-        position: relative;
-
         @include mobile() {
-          width: 95vw;
+          width: 85vw;
         }
       }
     }
 
     .aboutUsTypo {
-      p {
-        color: $para-color;
-        font-size: 18px;
-      }
-
       .para-desktop {
         @include desktop() {
           text-align: justify;
@@ -352,18 +266,10 @@ $accordion-bg: #f4f7fb;
       }
 
       .para-mobile {
-        display: none;
-
-        .btnReadmore {
-          text-decoration: none;
-          color: $primary-color;
-          font-weight: 600;
-          margin-left: 5px;
-        }
-
         @include mobile() {
           display: block;
           text-align: justify;
+          font-size: 16px;
         }
       }
 
@@ -381,47 +287,23 @@ $accordion-bg: #f4f7fb;
           display: flex;
           justify-content: center;
         }
-
-        .btn-primary {
-          &:hover {
-            color: $primary-color;
-          }
-        }
-
-        .btn-outline-primary {
-          font-weight: 600;
-          color: $font-dark;
-
-          &:hover {
-            color: $primary-color;
-          }
-        }
       }
     }
   }
 }
 
 #layanan {
-  padding: 79px 0;
-  position: relative;
+  @include mobile() {
+    padding: 30px 0;
+  }
 
   .hiasanLayananYellow {
-    width: 100px;
-    position: absolute;
-    top: 260px;
-    left: -50px;
-
     @include desktop() {
       display: none;
     }
   }
 
   .hiasanLayananBlue {
-    width: 100px;
-    position: absolute;
-    bottom: 60px;
-    right: -20px;
-
     @include desktop2() {
       display: none;
     }
@@ -431,16 +313,7 @@ $accordion-bg: #f4f7fb;
     }
   }
 
-  h5 {
-    color: $primary-color;
-    font-weight: 600;
-  }
-
   h1 {
-    font-weight: 600;
-    line-height: 60px;
-    padding: 0 100px;
-
     @include desktop() {
       padding: 0;
       line-height: 50px;
@@ -456,13 +329,7 @@ $accordion-bg: #f4f7fb;
       padding: 0 20px;
     }
     .swiper {
-      padding: 40px 0;
-      margin-top: 40px;
-      position: relative;
-
       .swiper-wrapper {
-        display: flex;
-
         @include desktop() {
           column-gap: 30px;
         }
@@ -472,67 +339,11 @@ $accordion-bg: #f4f7fb;
         }
 
         @include mobile() {
-          column-gap: 25px;
+          column-gap: 9vw;
           justify-content: flex-start;
         }
         .layananItem {
-          position: relative;
-          &:nth-child(1) {
-            .card {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 5px;
-                background-color: $primary-color;
-              }
-            }
-          }
-          &:nth-child(2) {
-            .card {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 5px;
-                background-color: $layanan-keamanan;
-              }
-            }
-          }
-          &:nth-child(3) {
-            .card {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 5px;
-                background-color: $layanan-cloud;
-              }
-            }
-          }
-          &:nth-child(4) {
-            .card {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 5px;
-                background-color: $layanan-fleksibel;
-              }
-            }
-          }
-
           .card {
-            width: 275px;
-            height: 275px;
-
-            box-shadow: 0px 40px 16px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-            border-radius: 0px 0px 5px 5px;
-
             @include desktop() {
               width: 250px;
             }
@@ -542,14 +353,11 @@ $accordion-bg: #f4f7fb;
             }
 
             @include mobile() {
-              width: 350px;
+              width: 300px;
               height: 380px;
             }
 
             .card-img-top {
-              width: 60px;
-              margin-top: 35px;
-
               @include desktop() {
                 margin-top: 35px;
               }
@@ -565,11 +373,6 @@ $accordion-bg: #f4f7fb;
             }
 
             .card-title {
-              font-size: 18px;
-              color: $font-dark;
-              font-weight: 600;
-              margin-top: 20px;
-
               @include desktop() {
                 margin-top: 20px;
               }
@@ -579,17 +382,14 @@ $accordion-bg: #f4f7fb;
               }
 
               @include mobile() {
-                font-size: 28px;
+                font-size: 26px;
                 margin-top: 30px;
               }
             }
 
             .card-text {
-              color: $font-dark;
-              font-weight: 400;
-
               @include mobile() {
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: 10px;
               }
             }

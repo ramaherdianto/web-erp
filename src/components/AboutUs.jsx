@@ -3,6 +3,7 @@ import { useState } from "react";
 import AboutImage from "../assets/about-image.png";
 import ButtonPrimary from "./ButtonPrimary";
 import ButtonSecondary from "./ButtonSecondary";
+import { AboutUsWrapper } from "./styles/AboutUs.styled";
 
 const AboutUs = () => {
   const [readMore, setReadMore] = useState(false);
@@ -13,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="aboutUsWrapper container d-flex flex-column justify-content-center" id="aboutUs">
+      <AboutUsWrapper className="container d-flex flex-column justify-content-center" id="aboutUs">
         <h5 className="text-center">Tentang Kami</h5>
         <h1 className="text-center">Mekari Company</h1>
         <div className="row innerAboutUs d-flex justify-content-between align-items-center">
@@ -47,7 +48,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </AboutUsWrapper>
     </>
   );
 };

@@ -1,3 +1,7 @@
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination } from "swiper";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import layananSolusi from "../assets/layanan/layanan-solusi.png";
@@ -6,10 +10,7 @@ import layananCloud from "../assets/layanan/layanan-cloud.png";
 import layananFleksibel from "../assets/layanan/layanan-fleksibel.png";
 import hiasanLayananYellow from "../assets/layanan/hiasan-layanan-yellow.png";
 import hiasanLayananBlue from "../assets/layanan/hiasan-layanan-blue.png";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination } from "swiper";
+import { LayananSection } from "./styles/Layanan.styled";
 
 export default function Layanan() {
   const services = [
@@ -37,7 +38,7 @@ export default function Layanan() {
 
   return (
     <>
-      <div className="layananWrapper container" id="layanan">
+      <LayananSection className="container" id="layanan">
         <img src={hiasanLayananYellow} className="hiasanLayananYellow d-md-none d-lg-block" />
 
         <img src={hiasanLayananBlue} className="hiasanLayananBlue d-md-none d-lg-block" />
@@ -52,27 +53,55 @@ export default function Layanan() {
             loop={false}
             slidesPerView={4}
             breakpoints={{
-              "@0.00": {
+              100: {
                 slidesPerView: 1,
-                spaceBetween: 0,
-                centeredSlides: true,
+                spaceBetween: 80,
               },
-              "@0.75": {
-                slidesPerView: 3,
-                spaceBetween: 0,
+              200: {
+                slidesPerView: 1,
+                spaceBetween: 90,
               },
-              "@1.00": {
+              275: {
+                slidesPerView: 1,
+                spaceBetween: 70,
+              },
+              300: {
+                slidesPerView: 1,
+                spaceBetween: -20,
+              },
+              375: {
+                slidesPerView: 1,
+                spaceBetween: -20,
+              },
+              400: {
+                slidesPerView: 1,
+                spaceBetween: -65,
+              },
+              475: {
+                slidesPerView: 1,
+                spaceBetween: -140,
+              },
+              500: {
+                slidesPerView: 1,
+                spaceBetween: -170,
+              },
+              575: {
+                slidesPerView: 1,
+                spaceBetween: -280,
+              },
+              768: {
                 slidesPerView: 3,
-                spaceBetween: 10,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 3,
+                spaceBetween: -20,
               },
               1200: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 0,
               },
-              1250: {
+              1440: {
                 slidesPerView: 4,
                 spaceBetween: 0,
               },
@@ -94,7 +123,7 @@ export default function Layanan() {
             })}
           </Swiper>
         </div>
-      </div>
+      </LayananSection>
     </>
   );
 }

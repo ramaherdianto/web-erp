@@ -1,11 +1,12 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { ButtonNavbarSection, NavBar, NavLinkCustom } from "./styles/NavigationBar.styled";
 import ButtonPrimary from "./ButtonPrimary";
 
 const NavigationBar = () => {
   return (
     <>
-      <nav className="navbar navbar-dark navbar-expand-lg">
+      <NavBar className="navbar navbar-dark navbar-expand-lg">
         <div className="container p-3">
           <a className="navbar-brand" href="/">
             Mekari
@@ -16,37 +17,37 @@ const NavigationBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLinkCustom className="nav-link active" aria-current="page" href="#">
                   Beranda
-                </a>
+                </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#aboutUs">
+                <NavLinkCustom className="nav-link" href="#aboutUs">
                   Tentang Kami
-                </a>
+                </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLinkCustom className="nav-link" href="#layanan">
                   Layanan
-                </a>
+                </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLinkCustom className="nav-link" href="#">
                   Harga
-                </a>
+                </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLinkCustom className="nav-link" href="#">
                   Kontak
-                </a>
+                </NavLinkCustom>
               </li>
             </ul>
-            <div className="btn-navbar">
+            <ButtonNavbarSection className="btn-navbar">
               <ButtonPrimary>Hubungi Kami</ButtonPrimary>
-            </div>
+            </ButtonNavbarSection>
           </div>
         </div>
-      </nav>
+      </NavBar>
     </>
   );
 };

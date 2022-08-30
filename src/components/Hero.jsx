@@ -4,11 +4,12 @@ import { Row, Col } from "react-bootstrap";
 import dotsImage from "../assets/dots-hero.png";
 import heroImage from "../assets/hero.png";
 import ButtonSecondary from "./ButtonSecondary";
+import { HeroSection } from "./styles/Hero.styled";
 
 const Hero = () => {
   return (
     <>
-      <div className="heroSection container" id="hero">
+      <HeroSection className="container" id="hero">
         <Row className="innerHero">
           <Col lg={6} className="colHero-1">
             <img src={dotsImage} alt="" className="dotsImage" />
@@ -29,7 +30,7 @@ const Hero = () => {
             <img src={heroImage} alt="" />
           </Col>
         </Row>
-      </div>
+      </HeroSection>
     </>
   );
 };
