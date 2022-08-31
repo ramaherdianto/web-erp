@@ -4,6 +4,7 @@ import Layanan from "./components/Layanan";
 import "./components/styles/ErpApp.css";
 import AboutUs from "./components/AboutUs";
 import Info from "./components/Info";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Layanan />
 
       <Info />
+      <Partners />
     </>
   );
 }
