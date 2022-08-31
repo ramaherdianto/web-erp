@@ -399,3 +399,155 @@ $accordion-bg: #f4f7fb;
     }
   }
 }
+
+// Info Section
+#info {
+  position: relative;
+  margin-top: 76px;
+  margin-bottom: 40rem;
+  padding: 0;
+  @include desktop() {
+    overflow-x: hidden;
+  }
+
+  .InnerInfo {
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      @include desktop() {
+        padding: 0 80px;
+      }
+
+      @include tablet() {
+        padding: 0 80px;
+      }
+
+      @include mobile() {
+        padding: 0 9vw;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -200px;
+        bottom: 0;
+        width: 363px;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        z-index: -10;
+        background-color: rgba(244, 247, 251, 1);
+
+        @include desktop() {
+          display: none;
+        }
+      }
+
+      .info-item {
+        margin-left: 30px;
+        width: 243px;
+        height: 129px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 128px 51px rgba(64, 66, 69, 0.01), 0px 72px 43px rgba(64, 66, 69, 0.05), 0px 32px 32px rgba(64, 66, 69, 0.09), 0px 8px 18px rgba(64, 66, 69, 0.1), 0px 0px 0px rgba(64, 66, 69, 0.1);
+
+        @include tablet() {
+          width: 200px;
+          height: 100px;
+        }
+        @include mobile() {
+          width: 170px;
+          height: 86px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 10px;
+          height: 100%;
+          border-radius: 10px 0 0 10px;
+          background-color: #85a9ff;
+        }
+
+        .card-body {
+          text-align: center;
+
+          .card-title {
+            font-size: 46px;
+            font-weight: 700;
+            color: $primary-color;
+
+            @include tablet() {
+              font-size: 36px;
+            }
+            @include mobile() {
+              font-size: 32px;
+            }
+          }
+
+          .card-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: $font-dark;
+
+            @include tablet() {
+              font-size: 14px;
+            }
+            @include mobile() {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .info-images {
+      position: relative;
+
+      @include desktop() {
+        overflow: hidden;
+      }
+      .inner-info-images {
+        @include desktop() {
+          // overflow-x: hidden;
+          margin-right: -200px;
+        }
+        .infoImg {
+          width: 828px;
+          position: relative;
+          z-index: -1;
+
+          @include desktop() {
+            margin-left: -230px;
+            margin-right: -200px;
+          }
+
+          @include tablet() {
+            margin-left: -100px;
+          }
+          @include mobile() {
+            margin-left: -15px;
+          }
+        }
+
+        .hiasanInfo {
+          position: absolute;
+          width: 140px;
+          right: 15px;
+          top: 150px;
+          z-index: -10;
+
+          @include desktop() {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
