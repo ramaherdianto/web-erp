@@ -39,6 +39,8 @@ const LayananSection = styled.div`
         display: flex;
 
         .layananItem {
+          display: flex;
+          justify-content: center;
           position: relative;
           &:nth-child(1) {
             .card {
@@ -49,6 +51,12 @@ const LayananSection = styled.div`
                 width: 100%;
                 height: 5px;
                 background: #3366ff;
+              }
+
+              .card-text {
+                @media screen and (max-width: 576px) {
+                  margin-top: 10px;
+                }
               }
             }
           }
@@ -62,6 +70,22 @@ const LayananSection = styled.div`
                 height: 5px;
                 background: #94ccfd;
               }
+
+              .card-text {
+                margin-top: 22px;
+
+                @media screen and (max-width: 992px) {
+                  margin-top: 0;
+                }
+
+                @media screen and (max-width: 769px) {
+                  margin-top: 20px;
+                }
+
+                @media screen and (max-width: 576px) {
+                  margin-top: 10px;
+                }
+              }
             }
           }
           &:nth-child(3) {
@@ -74,6 +98,18 @@ const LayananSection = styled.div`
                 height: 5px;
                 background: #7aec8d;
               }
+
+              .card-text {
+                margin-top: 22px;
+
+                @media screen and (max-width: 769px) {
+                  margin-top: 20px;
+                }
+
+                @media screen and (max-width: 576px) {
+                  margin-top: 40px;
+                }
+              }
             }
           }
           &:nth-child(4) {
@@ -85,6 +121,12 @@ const LayananSection = styled.div`
                 width: 100%;
                 height: 5px;
                 background: #fec7a9;
+              }
+
+              .card-text {
+                @media screen and (max-width: 576px) {
+                  margin-top: 10px;
+                }
               }
             }
           }

@@ -113,7 +113,7 @@ export default function Layanan() {
             {services.map((service, index) => {
               return (
                 <SwiperSlide key={index} className="layananItem">
-                  <div className="card">
+                  <div className="card border-0">
                     <img src={service.img} className="card-img-top ms-3" alt="..." />
                     <h5 className="card-title mx-3">{service.headline}</h5>
                     <p className="card-text mx-3">{service.desc}</p>
