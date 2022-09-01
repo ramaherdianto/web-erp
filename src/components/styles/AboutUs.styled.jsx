@@ -6,9 +6,11 @@ const AboutUsWrapper = styled.div`
   h5 {
     color: #3366ff;
     font-weight: 600;
+    font-size: 18px;
   }
 
   h1 {
+    font-size: 32px;
     font-weight: 600;
   }
 

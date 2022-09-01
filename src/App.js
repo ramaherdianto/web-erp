@@ -5,6 +5,7 @@ import "./components/styles/ErpApp.css";
 import AboutUs from "./components/AboutUs";
 import Info from "./components/Info";
 import Partners from "./components/Partners";
+import Produk from "./components/Produk";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
 
       <Info />
       <Partners />
+
+      <Produk />
     </>
   );
 }

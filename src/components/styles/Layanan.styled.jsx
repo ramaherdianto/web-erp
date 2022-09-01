@@ -21,12 +21,14 @@ const LayananSection = styled.div`
   h5 {
     color: #3366ff;
     font-weight: 600;
+    font-size: 18px;
   }
 
   h1 {
     font-weight: 600;
-    line-height: 60px;
-    padding: 0 100px;
+    font-size: 32px;
+    line-height: 50px;
+    padding: 0 200px;
   }
 
   .innerSwiper {
@@ -97,6 +99,12 @@ const LayananSection = styled.div`
                 width: 100%;
                 height: 5px;
                 background: #7aec8d;
+              }
+
+              .card-title {
+                @media screen and (max-width: 576px) {
+                  padding-right: 10px;
+                }
               }
 
               .card-text {

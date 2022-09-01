@@ -61,29 +61,45 @@ export default function Layanan() {
                 slidesPerView: 1,
                 spaceBetween: 90,
               },
+              250: {
+                slidesPerView: 1,
+                spaceBetween: -20,
+              },
               275: {
                 slidesPerView: 1,
-                spaceBetween: 70,
+                spaceBetween: -40,
               },
               300: {
                 slidesPerView: 1,
-                spaceBetween: -20,
+                spaceBetween: -90,
+              },
+              350: {
+                slidesPerView: 1,
+                spaceBetween: -120,
               },
               375: {
                 slidesPerView: 1,
-                spaceBetween: -20,
+                spaceBetween: -160,
               },
               400: {
                 slidesPerView: 1,
-                spaceBetween: -65,
+                spaceBetween: -185,
+              },
+              450: {
+                slidesPerView: 1,
+                spaceBetween: -220,
               },
               475: {
                 slidesPerView: 1,
-                spaceBetween: -140,
+                spaceBetween: -250,
               },
               500: {
                 slidesPerView: 1,
-                spaceBetween: -170,
+                spaceBetween: -280,
+              },
+              550: {
+                slidesPerView: 1,
+                spaceBetween: -340,
               },
               575: {
                 slidesPerView: 1,

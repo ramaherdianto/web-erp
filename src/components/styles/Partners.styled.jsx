@@ -46,7 +46,7 @@ const PartnersSectionMobile = styled.div`
           align-items: center;
           margin-top: 20px;
           .partnerImg {
-            width: 250px;
+            width: 180px;
           }
         }
       }
