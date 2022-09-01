@@ -6,6 +6,7 @@ import AboutUs from "./components/AboutUs";
 import Info from "./components/Info";
 import Partners from "./components/Partners";
 import Produk from "./components/Produk";
+import Pesan from "./components/Pesan";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Partners />
 
       <Produk />
+
+      <Pesan />
     </>
   );
 }

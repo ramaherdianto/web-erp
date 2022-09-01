@@ -512,8 +512,19 @@
   }
 }
 
+#produk {
+  margin-top: 100px;
+  padding: 0;
+}
+@media screen and (max-width: 769px) {
+  #produk {
+    margin-top: 76px;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 576px) {
   #produk {
+    margin-top: 0;
     padding: 20px;
   }
 }
@@ -539,12 +550,12 @@
 }
 @media screen and (max-width: 769px) {
   #produk .inner-produk {
-    padding: 40px 0;
+    padding: 0 0;
   }
 }
 @media screen and (max-width: 576px) {
   #produk .inner-produk {
-    padding: 40px 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -569,5 +580,37 @@
   #produk .inner-produk .produk-item .card-produk .card-body .card-text {
     font-size: 10px;
     margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #pesan {
+    padding: 56px 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #pesan .pesan-headline {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #pesan .pesan-para {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #pesan .pesan-para {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  #pesan .pesan-para {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #pesan .pesan-para {
+    font-size: 14px;
+    padding: 0;
   }
 }/*# sourceMappingURL=ErpApp.css.map */

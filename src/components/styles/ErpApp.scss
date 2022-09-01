@@ -560,7 +560,15 @@ $accordion-bg: #f4f7fb;
 
 // Produk Section
 #produk {
+  margin-top: 100px;
+  padding: 0;
+  @include tablet() {
+    margin-top: 76px;
+    padding: 0;
+  }
+
   @include mobile() {
+    margin-top: 0;
     padding: 20px;
   }
 
@@ -587,10 +595,10 @@ $accordion-bg: #f4f7fb;
       padding: 40px 0;
     }
     @include tablet() {
-      padding: 40px 0;
+      padding: 0 0;
     }
     @include mobile() {
-      padding: 40px 20px;
+      padding: 0 20px;
     }
 
     .produk-item {
@@ -623,6 +631,38 @@ $accordion-bg: #f4f7fb;
           }
         }
       }
+    }
+  }
+}
+
+// Pesan Section
+#pesan {
+  @include mobile() {
+    padding: 56px 10px;
+  }
+
+  .pesan-headline {
+    @include mobile() {
+      font-size: 18px;
+    }
+  }
+
+  .pesan-para {
+    @include desktop2() {
+      padding: 0 50px;
+    }
+
+    @include desktop() {
+      padding: 0;
+    }
+
+    @include tablet() {
+      padding: 0;
+    }
+
+    @include mobile() {
+      font-size: 14px;
+      padding: 0;
     }
   }
 }

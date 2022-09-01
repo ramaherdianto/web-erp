@@ -48,6 +48,7 @@ const ProdukSection = styled.div`
         align-items: center;
         text-align: center;
         gap: 40px;
+        border-radius: 6px;
         transition: all 0.4s ease-in-out;
 
         &:hover {

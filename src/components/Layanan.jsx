@@ -79,7 +79,7 @@ export default function Layanan() {
               },
               375: {
                 slidesPerView: 1,
-                spaceBetween: -160,
+                spaceBetween: -140,
               },
               400: {
                 slidesPerView: 1,
