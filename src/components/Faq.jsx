@@ -42,7 +42,7 @@ const Faq = () => {
   };
 
   return (
-    <div>
+    <>
       <FaqSection className="FaqWrapper container" id="faq">
         <div className="row justify-content-between align-items-center">
           <div className="col-sm-12 col-md-12 col-lg-5 faq-typo">
@@ -70,7 +70,7 @@ const Faq = () => {
           </div>
         </div>
       </FaqSection>
-    </div>
+    </>
   );
 };
 
