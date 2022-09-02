@@ -4,6 +4,7 @@ const NavBar = styled.nav`
   background-color: transparent;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 `;
 
 const NavLinkCustom = styled.a`

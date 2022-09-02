@@ -7,6 +7,7 @@ import Info from "./components/Info";
 import Partners from "./components/Partners";
 import Produk from "./components/Produk";
 import Pesan from "./components/Pesan";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Produk />
 
       <Pesan />
+
+      <Faq />
     </>
   );
 }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const LayananSection = styled.div`
   padding: 79px 0;
   position: relative;
+  transition: all 0.5s ease-in-out;
 
   .hiasanLayananYellow {
     width: 100px;

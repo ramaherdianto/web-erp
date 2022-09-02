@@ -7,6 +7,7 @@ const PesanSection = styled.div`
   justify-content: center;
   align-items: center;
   row-gap: 15px;
+  transition: all 0.5s ease-in-out;
 
   .pesan-headline {
     font-weight: 600;

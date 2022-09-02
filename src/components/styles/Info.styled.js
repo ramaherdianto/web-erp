@@ -4,6 +4,7 @@ const InfoSection = styled.div`
   position: relative;
   margin-top: 76px;
   padding: 0;
+  transition: all 0.5s ease-in-out;
 
   .InnerInfo {
     .info-list {

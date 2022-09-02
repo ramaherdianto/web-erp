@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const AboutUsWrapper = styled.div`
   padding: 76px 15px;
+  transition: all 0.5s ease-in-out;
 
   h5 {
     color: #3366ff;

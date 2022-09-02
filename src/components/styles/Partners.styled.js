@@ -6,6 +6,7 @@ const PartnersSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 
   .inner-partners {
     display: flex;

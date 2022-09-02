@@ -32,13 +32,13 @@ const NavigationBar = () => {
                 </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <NavLinkCustom className="nav-link" href="#">
-                  Harga
+                <NavLinkCustom className="nav-link" href="#produk">
+                  Produk
                 </NavLinkCustom>
               </li>
               <li className="nav-item">
-                <NavLinkCustom className="nav-link" href="#">
-                  Kontak
+                <NavLinkCustom className="nav-link" href="#faq">
+                  FAQ
                 </NavLinkCustom>
               </li>
             </ul>

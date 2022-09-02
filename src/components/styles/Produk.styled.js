@@ -6,6 +6,7 @@ const ProdukSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 
   h5 {
     color: #3366ff;
