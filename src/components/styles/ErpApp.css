@@ -615,15 +615,6 @@
   }
 }
 
-#faq {
-  padding: 76px 0;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-}
 @media screen and (max-width: 576px) {
   #faq {
     padding: 76px 10px;
@@ -648,12 +639,6 @@
     display: none;
   }
 }
-#faq .row .faq-typo .faq-headline {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  color: #000;
-}
 @media screen and (max-width: 992px) {
   #faq .row .faq-typo .faq-headline {
     text-align: center;
@@ -664,11 +649,6 @@
     font-size: 18px;
   }
 }
-#faq .row .faq-typo .faq-para {
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-}
 @media screen and (max-width: 992px) {
   #faq .row .faq-typo .faq-para {
     text-align: center;
@@ -678,24 +658,6 @@
   #faq .row .faq-typo .faq-para {
     font-size: 14px;
   }
-}
-#faq .row .accordion-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  row-gap: 10px;
-}
-#faq .row .accordion-wrapper .accordion-item {
-  width: 550px;
-  height: auto;
-  max-height: 300px;
-  padding: 24px 18px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  cursor: pointer;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 @media screen and (max-width: 1200px) {
   #faq .row .accordion-wrapper .accordion-item {
@@ -721,67 +683,8 @@
     padding: 12px 18px;
   }
 }
-#faq .row .accordion-wrapper .accordion-item .question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .question h2 {
-  font-weight: 400;
-  font-size: 16px;
-}
-#faq .row .accordion-wrapper .accordion-item .question .accord-open {
-  font-size: 22px;
-  color: #4c9bf8;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .question .accord-close {
-  font-size: 22px;
-  color: #4c9bf8;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .question-active {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .question-active h2 {
-  font-weight: 600;
-  font-size: 16px;
-}
-#faq .row .accordion-wrapper .accordion-item .question-active .accord-open {
-  font-size: 22px;
-  color: #4c9bf8;
-}
-#faq .row .accordion-wrapper .accordion-item .question-active .accord-close {
-  font-size: 22px;
-  color: #4c9bf8;
-}
-#faq .row .accordion-wrapper .accordion-item .answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .answer.open {
-  height: auto;
-  max-height: 999px;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-#faq .row .accordion-wrapper .accordion-item .answer.open p {
-  margin-top: 30px;
-  font-weight: 400;
-  font-size: 14px;
-  color: #000;
-}
 @media screen and (max-width: 576px) {
   #faq .row .accordion-wrapper .accordion-item .answer.open p {
     margin-top: 25px;
   }
-}
-#faq .row .accordion-wrapper .accordion-item .answer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #000;
 }/*# sourceMappingURL=ErpApp.css.map */

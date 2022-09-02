@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaTimes } from "react-icons/fa";
+import { FaqSection } from "./styles/Faq.styled";
 
 const Faqs = [
   {
@@ -42,7 +43,7 @@ const Faq = () => {
 
   return (
     <div>
-      <div className="FaqWrapper container" id="faq">
+      <FaqSection className="FaqWrapper container" id="faq">
         <div className="row justify-content-between align-items-center">
           <div className="col-sm-12 col-md-12 col-lg-5 faq-typo">
             <h1 className="faq-headline">Mengenal apa itu software ERP?</h1>
@@ -68,7 +69,7 @@ const Faq = () => {
             })}
           </div>
         </div>
-      </div>
+      </FaqSection>
     </div>
   );
 };
