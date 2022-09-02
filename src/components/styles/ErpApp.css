@@ -439,6 +439,7 @@
 @media screen and (max-width: 576px) {
   #info .InnerInfo .info-list .info-item .card-body .card-text {
     font-size: 12px;
+    margin-top: -10px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -686,5 +687,90 @@
 @media screen and (max-width: 576px) {
   #faq .row .accordion-wrapper .accordion-item .answer.open p {
     margin-top: 25px;
+  }
+}
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #172b5e;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 769px) {
+  #footer {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  #footer .container .footerList {
+    display: flex;
+    row-gap: 30px;
+  }
+}
+#footer .container .footerList .footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .footerList .footer-logo a {
+  text-decoration: none;
+}
+#footer .container .footerList .footer-logo a h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+@media screen and (max-width: 769px) {
+  #footer .container .footerList .footer-logo a h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer .container .footerList .footer-logo a h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item {
+    display: flex;
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item .footer-item {
+    width: 50%;
+  }
+}
+#footer .container .footerList .footerItemWrapper .footerList-item .footer-item h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item .footer-item h2 {
+    font-size: 18px;
+  }
+}
+#footer .container .footerList .footerItemWrapper .footerList-item .footer-item p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 576px) {
+  #footer .container .footerList .footerItemWrapper .footerList-item .footer-item p {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=ErpApp.css.map */

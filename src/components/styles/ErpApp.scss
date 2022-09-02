@@ -485,6 +485,7 @@ $accordion-bg: #f4f7fb;
             }
             @include mobile() {
               font-size: 12px;
+              margin-top: -10px;
             }
           }
         }
@@ -736,6 +737,94 @@ $accordion-bg: #f4f7fb;
             p {
               @include mobile() {
                 margin-top: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer Section
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #172b5e;
+  transition: all 0.5s ease-in-out;
+
+  @include tablet() {
+    padding: 50px 0;
+  }
+
+  .container {
+    .footerList {
+      @include tablet() {
+        display: flex;
+        row-gap: 30px;
+      }
+      .footer-logo {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+          h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+
+            @include tablet() {
+              font-size: 35px;
+            }
+
+            @include mobile() {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+
+      .footerItemWrapper {
+        .footerList-item {
+          @include desktop() {
+            display: flex;
+            row-gap: 20px;
+          }
+
+          @include tablet() {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          @include mobile() {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .footer-item {
+            @include mobile() {
+              width: 50%;
+            }
+
+            h2 {
+              font-weight: 700;
+              font-size: 24px;
+              color: #fff;
+              margin-bottom: 20px;
+
+              @include mobile() {
+                font-size: 18px;
+              }
+            }
+
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.8);
+
+              @include mobile() {
+                font-size: 15px;
               }
             }
           }
