@@ -1,9 +1,10 @@
 import React from "react";
+import { FooterSection } from "./styles/Footer.styled";
 
 const Footer = () => {
   return (
     <>
-      <div className="footerWrapper justify-content-center" id="footer">
+      <FooterSection className="footerWrapper justify-content-center" id="footer">
         <div className="container justify-content-center">
           <div className="row footerList justify-content-between flex-wrap">
             <div className="col-sm-12 col-md-2 col-lg-2 footer-logo">
@@ -44,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </FooterSection>
     </>
   );
 };
