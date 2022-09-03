@@ -9,6 +9,7 @@ import Produk from "./components/Produk";
 import Pesan from "./components/Pesan";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Partners />
 
       <Produk />
+
+      <Testimonials />
 
       <Pesan />
 

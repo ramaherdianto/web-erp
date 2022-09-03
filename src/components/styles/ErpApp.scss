@@ -19,6 +19,24 @@ $icon-star: #e89900;
 $accordion-bg: #f4f7fb;
 
 // Breakpoints
+@mixin verySmallMobile {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin xxsMobile {
+  @media screen and (max-width: 376px) {
+    @content;
+  }
+}
+
+@mixin xsMobile {
+  @media screen and (max-width: 470px) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: 576px) {
     @content;
@@ -752,6 +770,10 @@ $accordion-bg: #f4f7fb;
     padding: 50px 0;
   }
 
+  @include mobile() {
+    padding: 50px 10px;
+  }
+
   .container {
     .footerList {
       @include tablet() {
@@ -802,6 +824,207 @@ $accordion-bg: #f4f7fb;
             p {
               @include mobile() {
                 font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#testimonials {
+  @include tablet() {
+    padding: 40px 0;
+    margin-bottom: 70px;
+  }
+
+  @include mobile() {
+    margin-top: -50px;
+    padding: 70px 10px;
+    margin-bottom: 90px;
+  }
+
+  @include xsMobile() {
+    padding: 50px 10px;
+    margin-bottom: 100px;
+  }
+  .row {
+    .testimonials-typo {
+      @include desktop() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      @include tablet() {
+        justify-content: center;
+        align-items: center;
+      }
+
+      h5 {
+        @include mobile() {
+          font-size: 14px;
+        }
+      }
+
+      h1 {
+        &::after {
+          @include desktop2() {
+            display: none;
+          }
+        }
+
+        @include tablet() {
+          text-align: center;
+        }
+
+        @include mobile() {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      p {
+        @include desktop2() {
+          margin-top: 20px;
+        }
+
+        @include desktop() {
+          display: none;
+        }
+
+        @include mobile() {
+          display: none;
+        }
+
+        &::after {
+          @include desktop2() {
+            display: none;
+          }
+        }
+      }
+
+      .slider-buttons {
+        @include desktop() {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .slider {
+      .slide-item {
+        @include xsMobile() {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .hiasanTestiGreen {
+          @include tablet() {
+            display: none;
+          }
+        }
+        .hiasanTestiYellow {
+          @include tablet() {
+            display: none;
+          }
+        }
+
+        .testimonialsImg {
+          @include tablet() {
+            width: 300px;
+            height: 300px;
+            margin-left: 0;
+          }
+
+          @include mobile() {
+            width: 50vw;
+            height: 50vw;
+          }
+        }
+
+        .card-testimonials {
+          @include desktop2() {
+            width: 340px;
+            height: 200px;
+          }
+
+          @include tablet() {
+            left: 180px;
+            top: 200px;
+          }
+
+          @include mobile() {
+            left: 50px;
+            height: 34vw;
+          }
+
+          @include xsMobile() {
+            width: 60vw;
+            height: 43vw;
+            left: 5px;
+            top: 150px;
+          }
+
+          @include xxsMobile() {
+            width: 60vw;
+            height: 47vw;
+            left: 5px;
+          }
+
+          @include xxsMobile() {
+            width: 60vw;
+            height: 46vw;
+            left: 5px;
+            top: 140px;
+          }
+
+          @include verySmallMobile() {
+            width: 60vw;
+            height: 48vw;
+            left: 5px;
+            top: 140px;
+          }
+
+          p.card-text {
+            font-weight: 400;
+            font-size: 14px;
+
+            @include mobile() {
+              font-size: 2.4vw;
+            }
+          }
+
+          .card-testimonials__footer {
+            @include mobile() {
+              margin-top: 0;
+            }
+
+            @include xsMobile() {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            .card-profesi {
+              @include mobile() {
+                font-size: 3vw;
+              }
+
+              @include xsMobile() {
+                font-size: 3vw;
+              }
+            }
+
+            p {
+              @include mobile() {
+                font-size: 3vw;
+              }
+
+              @include xsMobile() {
+                font-size: 3vw;
               }
             }
           }

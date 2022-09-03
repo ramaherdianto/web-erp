@@ -690,15 +690,14 @@
   }
 }
 
-#footer {
-  width: 100%;
-  padding: 100px 0;
-  background-color: #172b5e;
-  transition: all 0.5s ease-in-out;
-}
 @media screen and (max-width: 769px) {
   #footer {
     padding: 50px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer {
+    padding: 50px 10px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -706,18 +705,6 @@
     display: flex;
     row-gap: 30px;
   }
-}
-#footer .container .footerList .footer-logo {
-  display: flex;
-  flex-direction: column;
-}
-#footer .container .footerList .footer-logo a {
-  text-decoration: none;
-}
-#footer .container .footerList .footer-logo a h2 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #fff;
 }
 @media screen and (max-width: 769px) {
   #footer .container .footerList .footer-logo a h2 {
@@ -752,25 +739,213 @@
     width: 50%;
   }
 }
-#footer .container .footerList .footerItemWrapper .footerList-item .footer-item h2 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 20px;
-}
 @media screen and (max-width: 576px) {
   #footer .container .footerList .footerItemWrapper .footerList-item .footer-item h2 {
     font-size: 18px;
   }
 }
-#footer .container .footerList .footerItemWrapper .footerList-item .footer-item p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
-}
 @media screen and (max-width: 576px) {
   #footer .container .footerList .footerItemWrapper .footerList-item .footer-item p {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #testimonials {
+    padding: 40px 0;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials {
+    margin-top: -50px;
+    padding: 70px 10px;
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials {
+    padding: 50px 10px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #testimonials .row .testimonials-typo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .testimonials-typo {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .testimonials-typo h5 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #testimonials .row .testimonials-typo h1::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .testimonials-typo h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .testimonials-typo h1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #testimonials .row .testimonials-typo p {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #testimonials .row .testimonials-typo p {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .testimonials-typo p {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #testimonials .row .testimonials-typo p::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  #testimonials .row .testimonials-typo .slider-buttons {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials .row .slider .slide-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .slider .slide-item .hiasanTestiGreen {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .slider .slide-item .hiasanTestiYellow {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .slider .slide-item .testimonialsImg {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .testimonialsImg {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    width: 340px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    left: 180px;
+    top: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    left: 50px;
+    height: 34vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    width: 60vw;
+    height: 43vw;
+    left: 5px;
+    top: 150px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    width: 60vw;
+    height: 47vw;
+    left: 5px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    width: 60vw;
+    height: 46vw;
+    left: 5px;
+    top: 140px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #testimonials .row .slider .slide-item .card-testimonials {
+    width: 60vw;
+    height: 48vw;
+    left: 5px;
+    top: 140px;
+  }
+}
+#testimonials .row .slider .slide-item .card-testimonials p.card-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .card-testimonials p.card-text {
+    font-size: 2.4vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer .card-profesi {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer .card-profesi {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  #testimonials .row .slider .slide-item .card-testimonials .card-testimonials__footer p {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=ErpApp.css.map */
