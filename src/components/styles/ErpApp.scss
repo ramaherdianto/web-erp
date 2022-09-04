@@ -841,21 +841,30 @@ $accordion-bg: #f4f7fb;
 
   @include mobile() {
     margin-top: -50px;
-    padding: 70px 10px;
+    padding: 70px 20px;
     margin-bottom: 90px;
   }
 
   @include xsMobile() {
-    padding: 50px 10px;
+    padding: 50px 20px;
     margin-bottom: 100px;
   }
   .row {
+    @include desktop2() {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 40px;
+    }
+
     .testimonials-typo {
-      @include desktop() {
+      @include desktop2() {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         margin-bottom: 50px;
       }
 
@@ -877,7 +886,7 @@ $accordion-bg: #f4f7fb;
           }
         }
 
-        @include tablet() {
+        @include desktop2() {
           text-align: center;
         }
 
@@ -915,6 +924,10 @@ $accordion-bg: #f4f7fb;
     }
 
     .slider {
+      // @include mobile() {
+      //   padding: 0 20px;
+      // }
+
       .slide-item {
         @include xsMobile() {
           display: flex;
@@ -943,6 +956,7 @@ $accordion-bg: #f4f7fb;
           @include mobile() {
             width: 50vw;
             height: 50vw;
+            margin-left: 20px;
           }
         }
 

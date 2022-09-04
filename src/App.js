@@ -10,6 +10,7 @@ import Pesan from "./components/Pesan";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import { TestiData } from "../src/components/TestiData";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
 
       <Produk />
 
-      <Testimonials />
+      <Testimonials slides={TestiData} />
 
       <Pesan />
 

@@ -84,10 +84,64 @@ const TestiSection = styled.div`
 
     .slider {
       position: relative;
+      display: flex;
+      justify-content: flex-start;
+      transition: all 1s ease;
+
       .slide-item {
         display: flex;
         align-items: center;
         position: relative;
+        opacity: 0;
+        transition-duration: 1s ease;
+
+        &:nth-child(2) {
+          display: none;
+          position: absolute;
+          opacity: 0;
+          transition-duration: 1s ease;
+
+          &.active {
+            display: block;
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+          }
+        }
+        &:nth-child(3) {
+          display: none;
+          position: absolute;
+          opacity: 0;
+          transition-duration: 1s ease;
+
+          &.active {
+            display: block;
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+          }
+        }
+        &:nth-child(4) {
+          display: none;
+          position: absolute;
+          opacity: 0;
+          transition-duration: 1s ease;
+
+          &.active {
+            display: block;
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+          }
+        }
+
+        &.active {
+          display: flex;
+          align-items: center;
+          opacity: 1;
+          transition-duration: 1s;
+          transform: scale(1.08);
+        }
 
         .hiasanTestiGreen {
           width: 87.39px;
