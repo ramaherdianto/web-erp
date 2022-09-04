@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container justify-content-center">
           <div className="row footerList justify-content-between flex-wrap">
             <div className="col-sm-12 col-md-2 col-lg-2 footer-logo">
-              <a href="/index">
+              <a href="#">
                 <h2>Mekari</h2>
               </a>
             </div>

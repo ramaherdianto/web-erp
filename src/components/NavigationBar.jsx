@@ -8,7 +8,7 @@ const NavigationBar = () => {
     <>
       <NavBar className="navbar navbar-dark navbar-expand-lg">
         <div className="container p-3">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/index">
             Mekari
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,11 @@ const NavigationBar = () => {
               <li className="nav-item">
                 <NavLinkCustom className="nav-link" href="#produk">
                   Produk
+                </NavLinkCustom>
+              </li>
+              <li className="nav-item">
+                <NavLinkCustom className="nav-link" href="#testimonials">
+                  Testimonials
                 </NavLinkCustom>
               </li>
               <li className="nav-item">
